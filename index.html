@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Unit Converter</h1>
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="unit-type">Unit Type</label>
+          <select id="unit-type" name="unit-type">
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+            <option value="volume">Volume</option>
+            <option value="temperature">Temperature</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amount">Number</label>
+          <input type="number" id="amount" placeholder="Enter number" />
+        </div>
+
+        <div class="form-group">
+          <label for="from-unit">From</label>
+          <select id="from-unit"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="to-unit">To</label>
+          <select id="to-unit"></select>
+        </div>
+
+        <button type="button" id="swap-btn">↔ Swap Units</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
